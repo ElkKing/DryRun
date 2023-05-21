@@ -1,0 +1,9 @@
+{
+	"name": "my-adf-dev-001",
+	"location": "southeastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "dad3de23-90b8-4c9b-b891-4103290f68d4",
+		"tenantId": "92e84ceb-fbfd-47ab-be52-080c6b87953f"
+	}
+}
