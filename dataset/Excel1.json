@@ -1,0 +1,90 @@
+{
+	"name": "Excel1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Closed",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Huan Yang.xlsx",
+				"container": "smiencdev"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Product Number",
+				"type": "String"
+			},
+			{
+				"name": "Product Category",
+				"type": "String"
+			},
+			{
+				"name": "Proj. type",
+				"type": "String"
+			},
+			{
+				"name": "Product name",
+				"type": "String"
+			},
+			{
+				"name": "PM",
+				"type": "String"
+			},
+			{
+				"name": "PQL",
+				"type": "String"
+			},
+			{
+				"name": "PCL",
+				"type": "String"
+			},
+			{
+				"name": "PQE",
+				"type": "String"
+			},
+			{
+				"name": "ME",
+				"type": "String"
+			},
+			{
+				"name": "Current Status",
+				"type": "String"
+			},
+			{
+				"name": "Project phase\n(Prototype)",
+				"type": "String"
+			},
+			{
+				"name": "Early Deliver\n(ED)",
+				"type": "String"
+			},
+			{
+				"name": "Project phase\n(PS/PVT)",
+				"type": "String"
+			},
+			{
+				"name": "Project phase\n(Volume)",
+				"type": "String"
+			},
+			{
+				"name": "Report Status",
+				"type": "String"
+			},
+			{
+				"name": "Product Family",
+				"type": "String"
+			},
+			{
+				"name": "Platform",
+				"type": "String"
+			}
+		]
+	}
+}
