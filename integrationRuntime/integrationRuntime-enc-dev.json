@@ -1,0 +1,6 @@
+{
+	"name": "integrationRuntime-enc-dev",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
