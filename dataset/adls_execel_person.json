@@ -14,7 +14,8 @@
 				"fileName": "Person.xlsx",
 				"folderPath": "source",
 				"fileSystem": "smiencdev"
-			}
+			},
+			"firstRowAsHeader": true
 		},
 		"schema": [
 			{
