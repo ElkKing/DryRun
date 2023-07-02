@@ -1,0 +1,12 @@
+{
+	"name": "ir-share-enc-ecop-dev",
+	"properties": {
+		"type": "SelfHosted",
+		"typeProperties": {
+			"linkedInfo": {
+				"resourceId": "/subscriptions/a91d5122-fba3-4bfa-9528-d912057fb2dd/resourcegroups/az-weu-dev-rg-0001/providers/Microsoft.DataFactory/factories/az-weu-dev-adf-01/integrationruntimes/ir-selfhosted-enc",
+				"authorizationType": "Rbac"
+			}
+		}
+	}
+}
