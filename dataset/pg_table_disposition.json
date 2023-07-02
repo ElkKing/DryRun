@@ -1,0 +1,16 @@
+{
+	"name": "pg_table_disposition",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "enc_pg_dev_001",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "PostgreSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dol",
+			"table": "compass_disposition"
+		}
+	}
+}
