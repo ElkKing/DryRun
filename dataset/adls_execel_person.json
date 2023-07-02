@@ -19,18 +19,23 @@
 		},
 		"schema": [
 			{
+				"name": "Name",
 				"type": "String"
 			},
 			{
+				"name": "Gender",
 				"type": "String"
 			},
 			{
+				"name": "Email",
 				"type": "String"
 			},
 			{
+				"name": "Phone",
 				"type": "String"
 			},
 			{
+				"name": "Location",
 				"type": "String"
 			}
 		]
