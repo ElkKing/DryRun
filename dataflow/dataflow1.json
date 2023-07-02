@@ -139,11 +139,13 @@
 				"          last_restored_by as string,",
 				"          row_version_stamp as string",
 				"     ),",
+				"     partitionFileNames:['output.csv'],",
 				"     umask: 0022,",
 				"     preCommands: [],",
 				"     postCommands: [],",
 				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> sink1"
+				"     skipDuplicateMapOutputs: true,",
+				"     partitionBy('hash', 1)) ~> sink1"
 			]
 		}
 	}
