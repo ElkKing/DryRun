@@ -1,0 +1,333 @@
+{
+	"name": "csv_adsl_dev",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "dispostion.csv",
+				"folderPath": "destination",
+				"fileSystem": "smiencdev"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "facility",
+				"type": "String"
+			},
+			{
+				"name": "disposition",
+				"type": "String"
+			},
+			{
+				"name": "disposition_type",
+				"type": "String"
+			},
+			{
+				"name": "disposition_class_id",
+				"type": "String"
+			},
+			{
+				"name": "product_id",
+				"type": "String"
+			},
+			{
+				"name": "grade_id",
+				"type": "String"
+			},
+			{
+				"name": "severity_id",
+				"type": "String"
+			},
+			{
+				"name": "scheduled_start_date",
+				"type": "String"
+			},
+			{
+				"name": "scheduled_finish_date",
+				"type": "String"
+			},
+			{
+				"name": "testing_start_date",
+				"type": "String"
+			},
+			{
+				"name": "testing_finish_date",
+				"type": "String"
+			},
+			{
+				"name": "quantity",
+				"type": "String"
+			},
+			{
+				"name": "uom_code",
+				"type": "String"
+			},
+			{
+				"name": "status",
+				"type": "String"
+			},
+			{
+				"name": "quality_status_code",
+				"type": "String"
+			},
+			{
+				"name": "comment_",
+				"type": "String"
+			},
+			{
+				"name": "unit_id",
+				"type": "String"
+			},
+			{
+				"name": "reference_disposition",
+				"type": "String"
+			},
+			{
+				"name": "reference_facility",
+				"type": "String"
+			},
+			{
+				"name": "sample_plan_id",
+				"type": "String"
+			},
+			{
+				"name": "sample_size",
+				"type": "String"
+			},
+			{
+				"name": "order_no",
+				"type": "String"
+			},
+			{
+				"name": "order_type",
+				"type": "String"
+			},
+			{
+				"name": "order_line_no",
+				"type": "String"
+			},
+			{
+				"name": "wip_order_no",
+				"type": "String"
+			},
+			{
+				"name": "wiporder_type",
+				"type": "String"
+			},
+			{
+				"name": "partner_id",
+				"type": "String"
+			},
+			{
+				"name": "execution_order_no",
+				"type": "String"
+			},
+			{
+				"name": "execution_order_type",
+				"type": "String"
+			},
+			{
+				"name": "disposition_user_status_id",
+				"type": "String"
+			},
+			{
+				"name": "opr_sequence_no",
+				"type": "String"
+			},
+			{
+				"name": "step_sequence_no",
+				"type": "String"
+			},
+			{
+				"name": "lot_no",
+				"type": "String"
+			},
+			{
+				"name": "serial_no",
+				"type": "String"
+			},
+			{
+				"name": "specification_id",
+				"type": "String"
+			},
+			{
+				"name": "current_disposition_sequence_no",
+				"type": "String"
+			},
+			{
+				"name": "root_cause_reason_code",
+				"type": "String"
+			},
+			{
+				"name": "corrective_action_reason_code",
+				"type": "String"
+			},
+			{
+				"name": "sample_start_date",
+				"type": "String"
+			},
+			{
+				"name": "sample_start_employee_id",
+				"type": "String"
+			},
+			{
+				"name": "sample_finish_date",
+				"type": "String"
+			},
+			{
+				"name": "sample_finish_employee_id",
+				"type": "String"
+			},
+			{
+				"name": "testing_start_employee_id",
+				"type": "String"
+			},
+			{
+				"name": "testing_finish_employee_id",
+				"type": "String"
+			},
+			{
+				"name": "mrb_start_date",
+				"type": "String"
+			},
+			{
+				"name": "mrb_start_employee_id",
+				"type": "String"
+			},
+			{
+				"name": "mrb_finish_date",
+				"type": "String"
+			},
+			{
+				"name": "mrb_finish_employee_id",
+				"type": "String"
+			},
+			{
+				"name": "container",
+				"type": "String"
+			},
+			{
+				"name": "wip_opr_sequence_no",
+				"type": "String"
+			},
+			{
+				"name": "resource_name",
+				"type": "String"
+			},
+			{
+				"name": "resource_type",
+				"type": "String"
+			},
+			{
+				"name": "resource_life_cycle",
+				"type": "String"
+			},
+			{
+				"name": "inspection_plan_id",
+				"type": "String"
+			},
+			{
+				"name": "sampling_procedure_id",
+				"type": "String"
+			},
+			{
+				"name": "quality_gate_seq_item_id",
+				"type": "String"
+			},
+			{
+				"name": "quality_gate_id",
+				"type": "String"
+			},
+			{
+				"name": "test_evaluation_date",
+				"type": "String"
+			},
+			{
+				"name": "evaluation_inspector_id",
+				"type": "String"
+			},
+			{
+				"name": "partner_role",
+				"type": "String"
+			},
+			{
+				"name": "rework",
+				"type": "String"
+			},
+			{
+				"name": "reference_id",
+				"type": "String"
+			},
+			{
+				"name": "last_update_on",
+				"type": "String"
+			},
+			{
+				"name": "last_updated_by",
+				"type": "String"
+			},
+			{
+				"name": "created_on",
+				"type": "String"
+			},
+			{
+				"name": "created_by",
+				"type": "String"
+			},
+			{
+				"name": "active",
+				"type": "String"
+			},
+			{
+				"name": "last_delete_on",
+				"type": "String"
+			},
+			{
+				"name": "last_deleted_by",
+				"type": "String"
+			},
+			{
+				"name": "last_reactivate_on",
+				"type": "String"
+			},
+			{
+				"name": "last_reactivated_by",
+				"type": "String"
+			},
+			{
+				"name": "archive_id",
+				"type": "String"
+			},
+			{
+				"name": "last_archive_on",
+				"type": "String"
+			},
+			{
+				"name": "last_archived_by",
+				"type": "String"
+			},
+			{
+				"name": "last_restore_on",
+				"type": "String"
+			},
+			{
+				"name": "last_restored_by",
+				"type": "String"
+			},
+			{
+				"name": "row_version_stamp",
+				"type": "String"
+			}
+		]
+	}
+}
