@@ -1,9 +1,9 @@
 {
-	"name": "pipeline1",
+	"name": "pl_dataflow_dev_0702",
 	"properties": {
 		"activities": [
 			{
-				"name": "pl_dataflow_dev_0702",
+				"name": "pl_dataflow",
 				"type": "ExecuteDataFlow",
 				"dependsOn": [],
 				"policy": {
