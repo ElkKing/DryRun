@@ -14,7 +14,8 @@
 				"fileName": "Course.xlsx",
 				"folderPath": "source",
 				"fileSystem": "smiencdev"
-			}
+			},
+			"firstRowAsHeader": true
 		},
 		"schema": [
 			{
