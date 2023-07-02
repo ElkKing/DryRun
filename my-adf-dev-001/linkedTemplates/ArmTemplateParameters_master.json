@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "my-adf-dev-001"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureTableStorage1_connectionString": {
+			"value": ""
+		},
+		"enc_pg_dev_001_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://azweudevadlsgen2.dfs.core.windows.net/"
+		},
+		"ir-share-enc-ecop-dev_properties_typeProperties_linkedInfo_resourceId": {
+			"value": "/subscriptions/a91d5122-fba3-4bfa-9528-d912057fb2dd/resourcegroups/az-weu-dev-rg-0001/providers/Microsoft.DataFactory/factories/az-weu-dev-adf-01/integrationruntimes/ir-selfhosted-enc"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
