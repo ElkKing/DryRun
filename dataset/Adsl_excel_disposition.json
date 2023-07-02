@@ -1,0 +1,20 @@
+{
+	"name": "Adsl_excel_disposition",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "destination",
+				"fileSystem": "smiencdev"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": []
+	}
+}
