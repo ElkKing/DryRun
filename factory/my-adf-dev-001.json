@@ -1,13 +1,5 @@
 {
 	"name": "my-adf-dev-001",
-	"properties": {
-		"globalParameters": {
-			"gp_temperature_upper_limit": {
-				"type": "float",
-				"value": 50
-			}
-		}
-	},
 	"location": "southeastasia",
 	"identity": {
 		"type": "SystemAssigned",
