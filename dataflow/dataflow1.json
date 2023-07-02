@@ -1,0 +1,150 @@
+{
+	"name": "dataflow1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "adls_execel_course",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				},
+				{
+					"dataset": {
+						"referenceName": "adls_execel_person",
+						"type": "DatasetReference"
+					},
+					"name": "source2"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "ds_adls_output_cp_csv",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
+			"transformations": [
+				{
+					"name": "join1"
+				}
+			],
+			"scriptLines": [
+				"source(output(",
+				"          Column_1 as string,",
+				"          Column_2 as string,",
+				"          Column_3 as string,",
+				"          Column_4 as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> source1",
+				"source(output(",
+				"          Column_1 as string,",
+				"          Column_2 as string,",
+				"          Column_3 as string,",
+				"          Column_4 as string,",
+				"          Column_5 as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> source2",
+				"source1, source2 join(source1@Column_1 == source2@Column_1,",
+				"     joinType:'left',",
+				"     matchType:'exact',",
+				"     ignoreSpaces: false,",
+				"     broadcast: 'auto')~> join1",
+				"join1 sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     input(",
+				"          facility as string,",
+				"          disposition as string,",
+				"          disposition_type as string,",
+				"          disposition_class_id as string,",
+				"          product_id as string,",
+				"          grade_id as string,",
+				"          severity_id as string,",
+				"          scheduled_start_date as string,",
+				"          scheduled_finish_date as string,",
+				"          testing_start_date as string,",
+				"          testing_finish_date as string,",
+				"          quantity as string,",
+				"          uom_code as string,",
+				"          status as string,",
+				"          quality_status_code as string,",
+				"          comment_ as string,",
+				"          unit_id as string,",
+				"          reference_disposition as string,",
+				"          reference_facility as string,",
+				"          sample_plan_id as string,",
+				"          sample_size as string,",
+				"          order_no as string,",
+				"          order_type as string,",
+				"          order_line_no as string,",
+				"          wip_order_no as string,",
+				"          wiporder_type as string,",
+				"          partner_id as string,",
+				"          execution_order_no as string,",
+				"          execution_order_type as string,",
+				"          disposition_user_status_id as string,",
+				"          opr_sequence_no as string,",
+				"          step_sequence_no as string,",
+				"          lot_no as string,",
+				"          serial_no as string,",
+				"          specification_id as string,",
+				"          current_disposition_sequence_no as string,",
+				"          root_cause_reason_code as string,",
+				"          corrective_action_reason_code as string,",
+				"          sample_start_date as string,",
+				"          sample_start_employee_id as string,",
+				"          sample_finish_date as string,",
+				"          sample_finish_employee_id as string,",
+				"          testing_start_employee_id as string,",
+				"          testing_finish_employee_id as string,",
+				"          mrb_start_date as string,",
+				"          mrb_start_employee_id as string,",
+				"          mrb_finish_date as string,",
+				"          mrb_finish_employee_id as string,",
+				"          container as string,",
+				"          wip_opr_sequence_no as string,",
+				"          resource_name as string,",
+				"          resource_type as string,",
+				"          resource_life_cycle as string,",
+				"          inspection_plan_id as string,",
+				"          sampling_procedure_id as string,",
+				"          quality_gate_seq_item_id as string,",
+				"          quality_gate_id as string,",
+				"          test_evaluation_date as string,",
+				"          evaluation_inspector_id as string,",
+				"          partner_role as string,",
+				"          rework as string,",
+				"          reference_id as string,",
+				"          last_update_on as string,",
+				"          last_updated_by as string,",
+				"          created_on as string,",
+				"          created_by as string,",
+				"          active as string,",
+				"          last_delete_on as string,",
+				"          last_deleted_by as string,",
+				"          last_reactivate_on as string,",
+				"          last_reactivated_by as string,",
+				"          archive_id as string,",
+				"          last_archive_on as string,",
+				"          last_archived_by as string,",
+				"          last_restore_on as string,",
+				"          last_restored_by as string,",
+				"          row_version_stamp as string",
+				"     ),",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> sink1"
+			]
+		}
+	}
+}
